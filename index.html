@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Ahorro Tabaco</title>
+    <!-- (Opcional) <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <h1>Calculadora de Ahorro al Dejar de Fumar</h1>
+
+    <div>
+        <label for="precioPaquete">Precio del paquete (€):</label>
+        <input type="number" id="precioPaquete" step="0.01" value="7.15">
+    </div>
+    <div>
+        <label for="cigarrillosPorPaquete">Cigarrillos por paquete:</label>
+        <input type="number" id="cigarrillosPorPaquete" step="1" value="29">
+    </div>
+    <div>
+        <label for="cigarrillosAlDia">Cigarrillos fumados al día:</label>
+        <input type="number" id="cigarrillosAlDia" step="1" value="29">
+    </div>
+
+    <button id="btnCalcular">Calcular Gasto y Ahorro Potencial</button>
+
+    <h2>Resultados:</h2>
+    <div id="resultados">
+        <p>Gasto Diario: <span id="gastoDiario">-</span> €</p>
+        <p>Gasto Semanal: <span id="gastoSemanal">-</span> €</p>
+        <p>Gasto Mensual (promedio): <span id="gastoMensual">-</span> €</p>
+        <p>Gasto Anual: <span id="gastoAnual">-</span> €</p>
+        <hr>
+        <p>Si dejas de fumar, este sería tu ahorro.</p>
+    </div>
+    <div id="errorMensaje" style="color: red;"></div>
+
+    <!-- Primero el script con la función de cálculo -->
+    <script src="calculadoraAhorro.js"></script>
+    <!-- Luego el script que maneja la UI y usa la función anterior -->
+    <script src="main.js"></script>
+</body>
+</html>
