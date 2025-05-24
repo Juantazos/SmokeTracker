@@ -1,0 +1,97 @@
+/* Contenido para style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: inline-block; /* Permite que el ancho funcione y que el texto se alinee */
+    width: 220px; /* Ajusta según necesites para alinear los inputs */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px; /* Un ancho fijo para los inputs numéricos */
+    box-sizing: border-box; /* Asegura que padding y border no aumenten el ancho total */
+}
+
+button {
+    background-color: #5cb85c; /* Un verde amigable */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Para que ocupe su propia línea y podamos centrarlo si es necesario */
+    margin: 20px auto; /* Centrar el botón */
+}
+
+button:hover {
+    background-color: #4cae4c; /* Un verde un poco más oscuro al pasar el ratón */
+}
+
+#resultados {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#resultados p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+#resultados span {
+    font-weight: bold;
+    color: #007bff; /* Un azul para destacar los números */
+}
+
+#errorMensaje {
+    color: #d9534f; /* Un rojo para errores */
+    background-color: #f2dede;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Un poco de responsive design básico */
+@media (max-width: 600px) {
+    label {
+        width: 100%; /* En pantallas pequeñas, las etiquetas ocupan todo el ancho */
+        display: block; /* Se comportan como bloques */
+    }
+    input[type="number"] {
+        width: calc(100% - 16px); /* Ocupan todo el ancho menos el padding */
+    }
+    button {
+        width: 100%;
+    }
+}
